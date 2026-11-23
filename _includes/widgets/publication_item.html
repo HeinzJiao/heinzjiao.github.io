@@ -1,0 +1,12 @@
+{% assign item = include.item %}
+<article class="publication-item{% if item.cover %} has-cover{% endif %}">
+  {% if item.cover %}<img class="publication-cover" src="{{ item.cover | relative_url }}" alt="Overview of {{ item.title }}" loading="lazy">{% endif %}
+  <div class="publication-content">
+    <h3 class="publication-title">{{ item.title }}</h3>
+    <p class="publication-authors">{% include widgets/author_list.html authors=item.authors %}</p>
+    <p class="publication-venue"><span>{{ item.pub }}</span> · {{ item.pub_date }}{% if item.note %}<span class="publication-note">{{ item.note }}</span>{% endif %}</p>
+    {% if item.abstract %}<p class="publication-summary">{{ item.abstract }}</p>{% endif %}
+    {% if item.links.size > 0 %}<div class="publication-links">{% for link in item.links %}<a href="{{ link[1] }}">{{ link[0] }}</a>{% endfor %}</div>{% endif %}
+  </div>
+</article>
+

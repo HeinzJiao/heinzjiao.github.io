@@ -1,0 +1,20 @@
+---
+layout: default
+title: Publications
+navbar_title: Publications
+---
+<header class="page-heading"><p class="section-eyebrow">Research output</p><h1>Publications</h1><p>Polygonal geometry, generative models, and structured geospatial representations.</p><a href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}">Google Scholar profile</a></header>
+{% assign published = site.publications | where: "status", "published" | sort: "date" | reverse %}
+{% assign years = "2026,2025,2024" | split: "," %}
+{% for year in years %}
+<section class="card border-0 shadow-sm bg-white mb-4" aria-labelledby="year-{{ year }}">
+  <div class="section-header"><h2 id="year-{{ year }}" class="section-title mb-0">{{ year }}</h2></div>
+  {% for paper in published %}{% if paper.pub_date == year %}{% include widgets/publication_item.html item=paper %}{% endif %}{% endfor %}
+</section>
+{% endfor %}
+{% assign manuscripts = site.publications | where: "status", "under-review" | sort: "date" | reverse %}
+<section class="card border-0 shadow-sm bg-white" aria-labelledby="manuscripts-heading">
+  <div class="section-header"><h2 id="manuscripts-heading" class="section-title mb-0">Preprints & manuscripts under review</h2></div>
+  {% for paper in manuscripts %}{% include widgets/publication_item.html item=paper %}{% endfor %}
+</section>
+

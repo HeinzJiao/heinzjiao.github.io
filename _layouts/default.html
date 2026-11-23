@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description | escape }}">
+  <meta name="theme-color" content="#176b69">
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace: 'index.html', '' }}">
+  <title>{{ page.title }} · {{ site.data.profile.navbar_name }}</title>
+  <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/global.css' | relative_url }}">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  {% include navbar.html %}
+  <main id="main-content" class="container-lg flex-grow-1">{{ content }}</main>
+  {% include footer.html %}
+</body>
+</html>
+

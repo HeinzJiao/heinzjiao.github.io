@@ -1,0 +1,11 @@
+<section class="card border-0 shadow-sm bg-white" aria-labelledby="about-heading">
+  <div class="card-body section-body">
+    <p class="section-eyebrow">GeoAI & automated mapping</p>
+    <h2 id="about-heading" class="about-heading">From aerial imagery<br class="d-none d-xl-block"> to structured vector maps.</h2>
+    <div class="text-profile-bio">{{ site.data.profile.short_bio }}</div>
+    <ul class="research-tags" aria-label="Research interests">
+      {% for interest in site.data.profile.research_interests %}<li>{{ interest }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+

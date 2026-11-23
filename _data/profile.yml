@@ -1,0 +1,41 @@
+primary_name: "Weiqin Jiao"
+navbar_name: "Weiqin Jiao"
+email: "w.jiao@utwente.nl"
+gscholar: htr3w3oAAAAJ
+github: HeinzJiao
+portrait_url: /assets/images/photos/weiqin-jiao.jpg
+short_bio: >-
+  <p>I am a postdoctoral researcher in the Department of Geoinformatics at the
+  <a href="https://www.itc.nl/">Faculty of Geo-Information Science and Earth Observation (ITC)</a>,
+  University of Twente, the Netherlands.</p>
+  <p>My research brings together <strong>GeoAI, computer vision, and topographic mapping</strong>.
+  I develop methods that turn aerial imagery into structured vector maps, with an emphasis on
+  accurate polygon geometry, consistent shared boundaries, and generative modelling.
+  My work spans building outlines, road polygons, and seamless multi-class vector basemaps.</p>
+  <p>I received my Ph.D. in Geoinformatics from the University of Twente in September 2026,
+  supervised by Claudio Persello, George Vosselman, and Hao Cheng. My current research
+  investigates cross-region generalization of vector basemap generation, including applications
+  to informal settlements and the built environment in cities in the Global South.</p>
+research_interests:
+  - GeoAI & computer vision
+  - Polygonal vectorization
+  - Generative modelling
+  - Topology-consistent mapping
+experience:
+  - name: University of Twente · Faculty ITC
+    position: Postdoctoral Researcher, Department of Geoinformatics
+    date: Nov 2026–present
+  - name: University of Twente · Faculty ITC
+    position: Employed PhD Researcher
+    date: Oct 2022–Oct 2026
+education:
+  - name: University of Twente
+    position: Ph.D. in Geoinformatics
+    date: Oct 2022–Sep 2026
+  - name: Technische Universität Berlin
+    position: M.Sc. in Automotive Systems
+    date: Oct 2019–Jun 2022
+  - name: Southwest Jiaotong University
+    position: B.Sc. in Vehicle Engineering
+    date: Sep 2015–Jun 2019
+

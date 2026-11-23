@@ -1,0 +1,23 @@
+title: "Weiqin Jiao"
+description: "Weiqin Jiao is a postdoctoral researcher at ITC, University of Twente, working on GeoAI, polygonal vectorization, and automated topographic mapping."
+url: "https://heinzjiao.github.io"
+baseurl: ""
+timezone: Europe/Amsterdam
+markdown: kramdown
+collections:
+  - publications
+exclude:
+  - README.md
+  - LOCAL_PREVIEW.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - blog.html
+  - showcase.html
+  - index_layout2.html
+  - _posts
+  - _news
+  - _showcase
+  - _publications/2023
+  - _publications/2024/2024-pub-example-3.md
+

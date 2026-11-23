@@ -1,0 +1,11 @@
+<nav class="navbar navbar-light mb-4" aria-label="Main navigation">
+  <div class="container-lg navigation-inner">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.data.profile.navbar_name }}</a>
+    <div class="navigation-links">
+      {% for item in site.data.navigation.pages %}
+      <a class="nav-link{% if item.name == page.navbar_title %} active{% endif %}" {% if item.name == page.navbar_title %}aria-current="page"{% endif %} href="{{ item.url | relative_url }}">{{ item.name }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</nav>
+

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://heinzjiao.github.io/sitemap.xml

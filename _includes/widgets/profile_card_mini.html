@@ -1,0 +1,20 @@
+<div class="profile-sidebar">
+  <div class="card border-0 shadow-sm bg-white">
+    <div class="card-body profile-body">
+      <div class="portrait-frame">
+        <img src="{{ site.data.profile.portrait_url | relative_url }}" alt="Weiqin Jiao in Paris" width="1706" height="1279" class="profile-portrait">
+      </div>
+      <h1 class="profile-name">{{ site.data.profile.primary_name }}</h1>
+      <p class="profile-role">Postdoctoral Researcher</p>
+      <p class="profile-affiliation">Faculty ITC<br>University of Twente</p>
+      <p class="profile-location">Enschede, the Netherlands</p>
+      <a class="profile-email" href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a>
+      <div class="profile-links">
+        <a href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}">Google Scholar</a>
+        <a href="https://github.com/{{ site.data.profile.github }}">GitHub</a>
+      </div>
+    </div>
+  </div>
+  <p class="sidebar-note">GeoAI · Computer vision<br>Automated topographic mapping</p>
+</div>
+

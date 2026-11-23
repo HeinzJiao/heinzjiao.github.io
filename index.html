@@ -1,0 +1,27 @@
+---
+layout: default
+title: Home
+navbar_title: Home
+---
+<div class="row homepage-grid">
+  <aside class="col-lg-3 col-md-4">
+    {% include widgets/profile_card_mini.html %}
+  </aside>
+  <div class="col-lg-9 col-md-8">
+    {% include widgets/profile_card_bio_only.html %}
+    <section class="card border-0 shadow-sm bg-white mt-4" aria-labelledby="news-heading">
+      <div class="card-body section-body">
+        <h2 id="news-heading" class="section-title">Recent news</h2>
+        <ul class="news-list">
+          <li><time>Nov 2026</time><span>I joined the Department of Geoinformatics at ITC, University of Twente, as a postdoctoral researcher.</span></li>
+          <li><time>Sep 2026</time><span>I received my Ph.D. in Geoinformatics from the University of Twente.</span></li>
+          <li><time>2026</time><span><strong>ACPV-Net</strong>, our work on all-class polygonal vectorization, was accepted by CVPR 2026.</span></li>
+        </ul>
+      </div>
+    </section>
+    {% assign pubs = site.publications | where: "selected", true | sort: "date" | reverse %}
+    {% include widgets/publication_card.html publications=pubs %}
+    {% include widgets/experience_card.html %}
+  </div>
+</div>
+

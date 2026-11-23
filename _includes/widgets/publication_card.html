@@ -1,0 +1,5 @@
+<section class="card border-0 shadow-sm bg-white mt-4" aria-labelledby="selected-heading">
+  <div class="section-header"><h2 id="selected-heading" class="section-title mb-0">Selected publications</h2><a href="{{ '/publications.html' | relative_url }}">View all</a></div>
+  {% for paper in include.publications %}{% include widgets/publication_item.html item=paper %}{% endfor %}
+</section>
+

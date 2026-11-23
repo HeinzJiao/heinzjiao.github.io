@@ -1,0 +1,14 @@
+<section class="card border-0 shadow-sm bg-white mt-4" aria-labelledby="background-heading">
+  <div class="card-body section-body">
+    <h2 id="background-heading" class="section-title">Experience & education</h2>
+    <div class="row">
+      <div class="col-xl-6"><h3 class="subsection-title">Research appointments</h3>
+        {% for entry in site.data.profile.experience %}<div class="timeline-entry"><div class="timeline-date">{{ entry.date }}</div><h4>{{ entry.position }}</h4><p>{{ entry.name }}</p></div>{% endfor %}
+      </div>
+      <div class="col-xl-6"><h3 class="subsection-title">Education</h3>
+        {% for entry in site.data.profile.education %}<div class="timeline-entry"><div class="timeline-date">{{ entry.date }}</div><h4>{{ entry.position }}</h4><p>{{ entry.name }}</p></div>{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
